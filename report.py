@@ -12,9 +12,17 @@ ar_train = round(4.356588174707222,2)
 ar_test = round(3.351138752023845,2)
 
 
+# Using AutoRegression Model, the mean absolute error are as follows (lag 26)
+ar_baseline = round(25.338010670663973,2)
+ar_train = round(4.417969376848918,2)
+ar_test = round(3.351138752023845,2)
+
+
 df_dict = {
     "baseline":[lr_baseline, ar_baseline ],
     "train":[lr_train, ar_train]
 }
 
 print(pd.DataFrame(df_dict, index=["LinearRegression", "AutoRegression"]))
+
+
