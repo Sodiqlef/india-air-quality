@@ -19,10 +19,11 @@ arima_test = round(3.377729482577614,2)
 
 
 df_dict = {
-    "baseline":[lr_baseline, ar_baseline ],
-    "train":[lr_train, ar_train]
+    "baseline":[lr_baseline, ar_baseline, arima_baseline ],
+    "train":[lr_train, ar_train, arima_train],
+    "test":[lr_test, ar_test, arima_test]
 }
 
-print(pd.DataFrame(df_dict, index=["LinearRegression", "AutoRegression"]))
+print(pd.DataFrame(df_dict, index=["LinearRegression", "AutoRegression", "Arima"]))
 
 
