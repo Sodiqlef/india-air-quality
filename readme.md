@@ -16,6 +16,10 @@ The dataset contains **PM2.5 air quality readings specific to Mumbai**. Before m
 - **Visualization of trends and patterns**
 
 ---
+## 💾 Data Source & Database Connection
+-The PM2.5 air quality data was stored in MongoDB.
+-I used pymongo and MongoClient to connect to my MongoDB instance and retrieve the data for analysis.
+---
 
 ## ⚙️ Models Used
 
@@ -35,7 +39,7 @@ I experimented with three different time series models, using **Mean Absolute Er
   - ARIMA: `lag 24(Auto regression), 0(difference), lad 1(moving average)`
 
 ---
-### Key Findings
+## Key Findings
 - All three models significantly outperformed the baseline.
 - Auto Regression had the lowest test MAE, making it the most accurate model for this dataset.
 - Arima took too long to model, thereby not advisable
