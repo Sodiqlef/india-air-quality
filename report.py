@@ -12,10 +12,10 @@ ar_train = round(4.356588174707222,2)
 ar_test = round(3.351138752023845,2)
 
 
-# Using AutoRegression Model, the mean absolute error are as follows (lag 26)
-ar_baseline = round(25.338010670663973,2)
-ar_train = round(4.417969376848918,2)
-ar_test = round(3.351138752023845,2)
+# Using ARIMA Model, the mean absolute error are as follows (lag 26)
+arima_baseline = round(25.50956271788279,2)
+arima_train = round(4.21600635463509,2)
+arima_test = round(3.377729482577614,2)
 
 
 df_dict = {
