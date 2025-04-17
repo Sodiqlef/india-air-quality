@@ -16,16 +16,19 @@ The dataset contains **PM2.5 air quality readings specific to Mumbai**. Before m
 - **Visualization of trends and patterns**
 
 ---
+
 ## 💾 Data Source & Database Connection
--The PM2.5 air quality data was stored in MongoDB.
--I used pymongo and MongoClient to connect to my MongoDB instance and retrieve the data for analysis.
+
+- The PM2.5 air quality data was stored in MongoDB.
+- I used pymongo and MongoClient to connect to my MongoDB instance and retrieve the data for analysis.
+
 ---
 
 ## ⚙️ Models Used
 
 I experimented with three different time series models, using **Mean Absolute Error (MAE)** as the performance metric:
 
-| Model              | Baseline MAE | Train MAE | Test MAE |
+| Model             | Baseline MAE | Train MAE | Test MAE |
 |-------------------|--------------|-----------|----------|
 | Linear Regression | 25.18        | 5.10      | 3.52     |
 | Auto Regression   | 25.34        | 4.36      | 3.35     |
@@ -36,7 +39,7 @@ I experimented with three different time series models, using **Mean Absolute Er
 - **Lag selection** was important:
   - Linear Regression: `lag 1`
   - AutoRegression: `lag 26`
-  - ARIMA: `lag 24(Auto regression), 0(difference), lad 1(moving average)`
+  - ARIMA: `lag 24(Auto regression), 0(difference), lag 1(moving average)`
 
 ---
 ## Key Findings
